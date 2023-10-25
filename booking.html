@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+      function display()
+      {
+        var element=document.getElementById("first").value;/*to get value from formtag with respective
+         id& read the value so we use the shortcut(.value)*/
+                
+        if(element=="")
+        {
+          alert("value should not be empty");
+          return false;/*to avoid re-direction when data is empty in formtag */
+        }
+
+      }
+    </script>
+</head>
+<style>
+    .heading
+    {
+        font-size: xx-large;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bolder;
+        color: black;
+        background-color: orange;
+        border: seagreen;
+        border-style: solid;
+        height: 100px;
+        padding: 20px;
+    } 
+    #button{
+        border: wheat;
+        border-radius: 20%;
+        background-color: green;
+        border-style: solid;
+        width: 100px;
+        height: 50px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+     }
+     #button1{
+        border: seagreen;
+        border-radius: 10px;
+        background-color: orange;
+        border-style: solid;
+        width: 100px;
+        padding: 10px;
+       
+     }
+     #bg{
+       width: 100%;
+       height: 200%;
+        opacity:0.8;
+        z-index: -5;
+        position: absolute;
+        left: 0;
+        top: 0;
+     }
+     .form
+     {
+        font-size: x-large;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        width: 600px;
+     }
+     input
+     {
+        width: 200px;
+        border-radius: 10px;
+     }
+    </style>
+<body>
+    <form method="post" action="booking.php" onsubmit="return display();">
+   <center> 
+    <img src="hotelpic/bg.jpg" id="bg" ><button type="button" id="button" ><a href="index.html" style="color: aliceblue; text-decoration: none;">HOME</a></button>
+   
+    <div class="heading">
+        <center><p >AVENUE:BOOKING</p></center>
+   </div>
+   <br/><br/><br/>
+    <div class="form">
+  <center>Room No:<input type="text" id="first" name="roomno"/><br/><br/>
+     FIRST NAME:<input type="text" id="first" name="first"/><br/><br/>
+   LAST NAME:<input type="text" id="first" name="last"/> <br/><br/>
+   ADDRESS:<input type="text" id="first" name="address"/> <br/><br/>
+   AADHAR:<input type="text" id="first" name="aadhar"/> <br/><br/>
+   PHONE:<input type="text" id="first" name="phone"/> <br/><br/></center>
+   -----------------------------------------------------------------------------------------------------------------<br/><br/>
+   <center> SELECT BED TYPE:<select name="bedtype"><option>single bed</option><option>double bed</option></select><br/><br/>
+   SELECT ACCOMODATION:<select name="accomdation"><option>GENERAL</option><option>PREMIUM</option></select><br/><br/>
+   FOOD: <select name="food" ><option>VEG</option><option>NON-VEG</option></select><br/><br/>
+  ADDITIONAL ACCOMODATION: <select name="additionalaccomdation"><option>GAME</option><option>POOL</option></select><br/><br/> </center>
+  --------------------------------------------------------------------------------------------------------------------<br/><br/>
+  <center> DATE OF BOOKING:<input type="date"id="date" name="dateofbooking"><br/><br/>
+  DATE OF LEAVING:<input type="date" id="date" name="dateofleaving"><br/><br/> </center>
+  ---------------------------------------------------------------------------------------------------------------------<br/><br/>
+  <center>SELECT PAYMENT OPTION:<select name="paymentoption"><option>DEBIT CARD</option><option>CREDIT CARD</option><option>CASH</option><option>PAYTM</option><option>GPAY</option><option>PHONE PAY</option></select><br/><br/>
+  <input type="submit" id="button1" value="BOOKED"/></center>
+</div></center>
+  </form>  
+</body>
+</html>

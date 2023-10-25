@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .login1
+    {
+        width: 350px;
+        height: 300px;
+        border-color:white;
+        border-style: solid;
+        padding-top:100px;
+        margin-top: 100px;
+        font-size: xx-large;
+        color: yellow;
+        
+    }
+    .login1:hover {
+        transform: scale(1.2); 
+    }
+    body{
+        background-image: url(hotelpic/room103.jpg); width:auto; height:auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: soft-light;
+    }
+</style>
+<script type="text/javascript">
+    function display()
+    {
+        var element=document.getElementById("name1").value;
+         var element1=document.getElementById("pass1").value;
+         if(element=="" && element1=="" )
+         {
+            alert("enter the user and password")
+            return false;
+         }
+         else if((element=="anu" && element1=="admin123" ))
+         {
+
+         }
+         else{
+            alert("username/password incorrect")
+         }
+    }
+    
+</script>
+<style>
+
+</style>
+<body>
+    <center><div class="login1">
+    <form method="post" action="customerdetail.php" onsubmit="return display();" >
+    USER NAME:<input type="text"  id="name1"/><br/><br/><br/><br/>
+    PASSWORD:<input type="password" id="pass1"/><br/><br/>
+    <center><input type="submit" value="submit" style="background-color:yellow ; height: 30px; width: 100px;" /></center>
+    </center>
+    </form>
+    </div>
+</body>
+</html>

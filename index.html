@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="return false">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        
+        .li1
+        {
+            display:inline-flex;
+            list-style: none;
+            font-size: x-large;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 50px;
+            position: relative;
+            left: 50px;
+            top: 0px;
+            background-color:orange;
+            padding-left: 20px;
+            padding-right: 30px;
+            border-style: solid;
+            border-width:2px;
+            border-radius: 20px;
+            border-color:darkgreen;
+
+         }
+         a{
+            text-decoration: none;
+        color: black;
+    }
+    .collection
+    {
+        display: inline-flex;
+    }
+    .food
+    {
+        position: relative;
+        left: 200px;
+        height: 600px;
+        margin-top: 10px;
+    }
+    .room
+    {
+        height: 600px;
+    }
+    #address
+    {
+        font-size: larger;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        background-color:black;
+        color: aliceblue;
+        height: 300px;
+        width: 100%;
+        
+    }
+   #logo
+   {
+    position:relative;
+    left: 500px;
+    top:0px;
+    font-size:x-small;
+    
+   } 
+   #para1
+   {width:90%;
+    height: 200px;
+    position:absolute;
+    left:50px;
+    right: 50px;
+    bottom: 0px;
+    top:10px;
+    background-color: black;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: cursive;
+    visibility: hidden;
+    transition: visibility 0.5s;
+    opacity:0.5; 
+    color: aliceblue;
+   }
+   .img
+   {
+     width:100%;
+    height: 300px;
+ 
+ }
+ .img:hover #para1{
+    visibility: visible;
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    transition:ease-out;
+}
+.room1
+{
+   
+    width:150%;
+    height: 200px;
+}
+#r1
+{
+    width:33.8%;
+    height: 200px;
+    position:absolute;
+    left:5px;
+    right: 0px;
+    bottom: 0px;
+    top:380px;
+    background-color:yellow;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: cursive;
+    visibility: hidden;
+    transition: visibility 0.5s;
+    opacity:0.6; 
+    color: black;
+    text-align: center;
+
+}
+.room1:hover #r1{
+    visibility: visible;
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    transition:ease-out;
+}
+.pool1
+{
+    width:150%;
+    height: 200px;
+}
+#p1
+{
+    width:33.8%;
+    height: 200px;
+    position:absolute;
+    left:5px;
+    right: 0px;
+    bottom: 0px;
+    top:615px;
+    background-color:yellow;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: cursive;
+    visibility: hidden;
+    transition: visibility 0.5s;
+    opacity:0.6; 
+    color: black;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-radius: 100px;
+}
+.pool1:hover #p1
+{
+    visibility: visible;
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    transition:ease-out;
+
+}
+.game1
+{
+    width:150%;
+    height: 200px;
+}
+#g1
+{
+    width:33.8%;
+    height: 200px;
+    position:absolute;
+    left:5px;
+    right: 0px;
+    bottom: 0px;
+    top:850px;
+    background-color:yellow;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: cursive;
+    visibility: hidden;
+    transition: visibility 0.5s;
+    opacity:0.6; 
+    color: black;
+    text-align: center;
+
+}
+.game1:hover #g1
+{
+    visibility: visible;
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    transition:ease-out;
+}
+.food1
+{
+height:300px;
+width:150%;
+}
+#f1
+{
+    width:150%;
+    height: 150px;
+    position:absolute;
+    left:5px;
+    right: 5px;
+    bottom: 0px;
+    top:125px;
+    background-color:orange;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: cursive;
+    visibility: hidden;
+    
+    opacity:0.6; 
+    color:black;
+    text-align: center;
+    transition: none;
+}
+.food1:hover #f1
+{
+    visibility:visible;
+    transition: none;
+    
+}
+.cake1
+{
+    width:150%;
+    height:300px;
+}
+#c1
+{
+    width:150%;
+    height: 150px;
+    position:absolute;
+    left:5px;
+    right: 5px;
+    bottom: 0px;
+    top:450px;
+    background-color:orange;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: cursive;
+    visibility: hidden;
+    
+    opacity:0.6; 
+    color:black;
+    text-align: center;
+    transition: none;
+
+}
+.cake1:hover #c1
+{
+     visibility:visible;
+    transition: none;
+    
+
+}
+body{
+    background-color:lightgray;
+}
+
+
+
+ 
+
+    </style>
+    
+</head>
+<body>
+    <div class="img">
+    <img  src="hotelpic/homepic.jpg" width="100%" height="100%"/>
+    <p id="para1">AVENUE:HOTEL MANAGEMENT SYSTEM<br><br/>
+        CREATED BY:ANUSUYA.K</p></div>
+    <div class="menu">
+        <ul>
+            <li class="li1" ><a href="index.html">Home</a></li>
+            <li class="li1"><a href="booking.html">Booking</a></li>
+            <li class="li1"><a href="gallery.html">Gallery</a></li>
+
+            <li class="li1"><a href="login.html">Login</a></li>
+            <li class="li1"><a href="#address">Contact Us</a></li>
+            <li class="li1"><a href="about.html">About Us</a></li>
+        </ul>
+    </div><br/><br/> 
+    <div class="collection">
+
+        <div class="rooms">
+       <div class="room1"> <img src="hotelpic/room.jfif" width="100%" height="100%"/><p id ="r1">OFFER<br/><del>RS.5999</del><br/>just<br/>Rs.3999</p></div><br/><br/>
+       <div class="pool1"> <img src="hotelpic/pool.jpg" width="100%" height="100%"/><p id="p1">POOL<br/>and<br/>RESORT</p></div><br/><br/>
+       <div class="game1"> <img src="hotelpic/game.jpg" width="100%" height="100%"/><p id="g1">SPACIOUS<br/>indoor<br/>GAMING</p></div><br/><br/>
+        
+        </div>
+        <div class="food">
+           <div class="food1"> <img src="hotelpic/pexels-chan-walrus-958545.jpg" width="100%" height="100%"/><p id="f1">Today's flavor<br/><br/>Indian Ascent</p></div></br></br>
+           <div class="cake1"> <img src="hotelpic/cake.jpg" width="100%" height="100%"/><p id="c1">DELICIOUS<br/> DESSERT <br/>AVAILABLE</p></div>
+ 
+        </div>
+        </div>
+    </div>
+    <div id="address">
+        <table>
+            <td>
+                <p> DESIGNED BY:<br/><br/>
+                    NO:215,VALLUR KOTTAM HIGH Rd, <br/><br/>PONNANGIPURAM,NUNGAMBAKKAM,CHENNAI-600034.<br/<<br/>
+                    Phone:7092929845.<br/> </p>
+                    
+                    <a href="https://wa.me/qr/QFPDPOYDQBKDB1" ><img src="hotelpic/whatsapp.jpg" width="50px" height="50px"/></a>
+                    <a href="https://instagram.com/_hemasrinivasa?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" ><img src="hotelpic/insta.jpg" width="50px" height="50px"/></a><br/>
+                    <a href="#" ><img src="hotelpic/mail.jfif" width="50px" height="50px"/> </a>anumystical606@gmail.com<br/><br/>
+                
+            </td>
+            <td> <img src="hotelpic/logodesign.jpg" height="200px" width="200px" id="logo"/><br/>
+                <b style="color:yellow" id="logo">Hotels are taking luxury to new levels.<br/>
+                Hotel rooms are 2nd homes to famous people</b></td>
+        </table>
+       
+    </div>
+    
+    
+    
+</body>
+</html>
